@@ -199,7 +199,7 @@ The system processes uploaded documents through a structured AI pipeline.
 
 ### OCR
 
-* EasyOCR / Tesseract OCR
+* PaddleOCR / Tesseract OCR
 
 ### Vector Search
 
