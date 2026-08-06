@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Python Cache
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Uploaded Files
+uploads/
+temp/
+tmp/
+
+# Generated Outputs
+outputs/
+results/
+reports/
+generated/
+
+# Model Files
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.bin
+*.safetensors
+
+# Hugging Face Cache
+.huggingface/
+cache/
+
+# SQLite Database (if not needed)
+*.db
+*.sqlite3
+
+# Coverage
+.coverage
+htmlcov/
+
+# Misc
+*.swp
+*.bak
