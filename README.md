@@ -1,338 +1,112 @@
-# <h1><b>AI-Powered Multimodal Document Intelligence System</b></h1>
+﻿# Multimodal RAG Assistant
 
-<h2><b>Overview</b></h2>
-
-AI-powered Multimodal Retrieval-Augmented Generation (RAG) system designed to understand, retrieve, and answer questions from documents such as PDFs and images. The system combines Optical Character Recognition (OCR), semantic retrieval, vector search, and Large Language Models (LLMs) to provide accurate, context-aware responses from uploaded documents.
-
-The application is built using **FastAPI** for the backend and **Streamlit** for the frontend, enabling users to upload documents, retrieve relevant information, and interact with them through an intelligent conversational interface.
+An end-to-end, production-style **Multimodal Retrieval-Augmented Generation (RAG) Assistant** supporting documents, presentations, images, and audio. Built with **FastAPI**, **FAISS**, **SentenceTransformers**, **Groq (Whisper + GPT-OSS)**, **Gemini 3.6 Flash (VLM)**, and **YOLOv8**.
 
 ---
 
-<h2><b>Problem Statement</b></h2>
+## Key Features
 
-Traditional document search relies on keyword matching and manual navigation, making it difficult to locate relevant information in large or scanned documents. Additionally, image-based documents require OCR before they become searchable.
-
-There is a need for an intelligent document understanding system capable of extracting information from multiple document formats, retrieving semantically relevant content, and generating human-like responses using modern AI models.
-
----
-
-<h2><b>Solution Approach</b></h2>
-
-The system processes uploaded documents through a structured AI pipeline.
-
-### Document Upload
-
-* PDF Documents
-* PNG Images
-* JPG/JPEG Images
-
-### Document Processing
-
-* File Validation
-* PDF Page Extraction
-* Image Loading
-* OCR Text Extraction
-* Text Cleaning
-* Metadata Generation
-
-### Chunking
-
-* Document Segmentation
-* Context Preservation
-* Token-aware Chunking
-
-### Embedding Generation
-
-* Sentence Transformer Embeddings
-* Vector Representation
-* Metadata Storage
-
-### Retrieval
-
-* Semantic Similarity Search
-* Top-K Retrieval
-* Context Ranking
-
-### AI Response Generation
-
-* Prompt Construction
-* Context Injection
-* LLM-based Answer Generation
-
-### Output
-
-* Context-aware Response
-* Retrieved References
-* Confidence-based Retrieval
-* Conversational Interface
+- **Multi-Format Ingestion**:
+  - **PDF Documents** (.pdf): Multi-page digital text extraction via PyMuPDF with automatic fallback to high-resolution Tesseract OCR for scanned pages.
+  - **PowerPoint Decks** (.pptx, .ppt): Slide-by-slide parsing of titles, body shapes, notes, and OCR on embedded images.
+  - **Images** (.png, .jpg, .jpeg, .webp): Image preprocessing, Tesseract OCR text extraction, and YOLOv8 object detection.
+  - **Audio Files** (.wav, .mp3, .m4a, etc.): Automatic speech-to-text via Groq Whisper (whisper-large-v3) with timestamp-aware chunking.
+  - **Text Files** (.txt, .docx, .md): Clean chunking with sliding window overlap.
+- **Robust FAISS Vector Store**:
+  - Dense text embeddings via local sentence-transformers/all-MiniLM-L6-v2.
+  - Strict synchronization invariant: index.ntotal == len(metadata).
+  - Scoped retrieval by upload_id and bounds-checked similarity search.
+- **Dual Reasoning Engines**:
+  - **Text RAG**: Grounded, anti-hallucination context synthesis powered by Groq (openai/gpt-oss-20b).
+  - **Multimodal Visual RAG**: Direct visual understanding and diagram reasoning powered by Gemini VLM (gemini-3.6-flash).
+- **Glassmorphic Web Interface**:
+  - Interactive knowledge base sidebar with drag-and-drop upload and progress tracking.
+  - Live vector store statistics (documents, chunks, vectors, FAISS/metadata sync status).
+  - Grounded source citations displaying document name, page, slide, timestamp, and similarity distance.
+  - Export chat history as JSON or formatted PDF.
 
 ---
 
-<h2><b>System Architecture</b></h2>
+## Directory Structure
 
-```text
-                         +----------------------+
-                         |      User Browser    |
-                         +----------+-----------+
-                                    |
-                              Upload Document
-                                    |
-                                    v
-                       +-------------------------+
-                       |   Streamlit Frontend    |
-                       +-----------+-------------+
-                                   |
-                                   |
-                        REST API Request
-                                   |
-                                   v
-                      +---------------------------+
-                      |      FastAPI Backend      |
-                      +------------+--------------+
-                                   |
-       ------------------------------------------------------------
-       |                 Multimodal RAG Pipeline                  |
-       ------------------------------------------------------------
-                                   |
-                                   v
-                    +------------------------------+
-                    | File Validation              |
-                    | file_handler.py              |
-                    +--------------+---------------+
-                                   |
-                                   v
-                    +------------------------------+
-                    | Document Loader              |
-                    |                              |
-                    | • PDF Loader                 |
-                    | • Image Loader               |
-                    +--------------+---------------+
-                                   |
-                                   v
-                    +------------------------------+
-                    | OCR Extraction               |
-                    | ocr_extractor.py             |
-                    |                              |
-                    | • Text Detection             |
-                    | • Image Text Extraction      |
-                    +--------------+---------------+
-                                   |
-                                   v
-                    +------------------------------+
-                    | Text Preprocessing           |
-                    | preprocess.py               |
-                    |                              |
-                    | • Cleaning                  |
-                    | • Chunking                  |
-                    | • Metadata                  |
-                    +--------------+---------------+
-                                   |
-                                   v
-                    +------------------------------+
-                    | Embedding Generator          |
-                    | embedding.py                |
-                    |                              |
-                    | • Sentence Transformers      |
-                    | • Vector Embeddings          |
-                    +--------------+---------------+
-                                   |
-                                   v
-                    +------------------------------+
-                    | Vector Store                |
-                    |                              |
-                    | • FAISS                     |
-                    | • Similarity Search         |
-                    +--------------+---------------+
-                                   |
-                                   v
-                    +------------------------------+
-                    | Retriever                   |
-                    | retriever.py               |
-                    |                              |
-                    | • Top-K Search              |
-                    | • Ranking                   |
-                    +--------------+---------------+
-                                   |
-                                   v
-                    +------------------------------+
-                    | LLM Generator               |
-                    | llm.py                     |
-                    |                              |
-                    | • Prompt Engineering        |
-                    | • Context Injection         |
-                    | • AI Response               |
-                    +--------------+---------------+
-                                   |
-                                   v
-                       JSON Response (FastAPI)
-                                   |
-                                   v
-                    +------------------------------+
-                    | Streamlit Chat Interface     |
-                    |                              |
-                    | • Chat Window               |
-                    | • Sources                  |
-                    | • Upload Panel             |
-                    | • Model Settings           |
-                    +------------------------------+
-```
+\\\	ext
+D:\multimodel-rag\
+├── backend/
+│   ├── config.py             # Centralized settings & model configurations
+│   ├── main.py               # FastAPI application & static file serving
+│   └── routes/               # API endpoints (upload, rag, vlm, vectordb, etc.)
+├── frontend/
+│   ├── index.html            # Production dark glassmorphic web UI
+│   ├── style.css             # Glassmorphism styling and responsive layout
+│   └── app.js                # Frontend state management, RAG chat, and uploads
+├── modules/
+│   ├── ingestion/            # Unified ingestion engine (PDF, PPTX, image, audio, text)
+│   ├── vector_db/            # FAISS index and metadata store manager
+│   ├── embeddings/           # SentenceTransformer embedding encoder
+│   ├── rag/                  # RAG pipeline, prompt builder, and retriever
+│   ├── vlm/                  # Gemini VLM and Groq clients
+│   ├── ocr/                  # Tesseract OCR engine
+│   └── detection/            # YOLOv8 object detection
+├── uploads/                  # Ingested documents and media files
+├── vector_store/             # FAISS index (index.faiss) & metadata (metadata.json)
+├── requirements.txt          # Python dependencies
+└── .env                      # API keys and environment variables
+\\\
 
 ---
 
-<h2><b>Tech Stack</b></h2>
+## Prerequisites
 
-### Backend
-
-* Python
-* FastAPI
-* Uvicorn
-
-### Frontend
-
-* Streamlit
-
-### Artificial Intelligence
-
-* Hugging Face Transformers
-* Sentence Transformers
-* Retrieval-Augmented Generation (RAG)
-
-### OCR
-
-* Tesseract OCR
-
-### Vector Search
-
-* FAISS
-
-### Image Processing
-
-* OpenCV
-* Pillow
-
-### Utilities
-
-* NumPy
-* Pandas
+1. **Python 3.10+** (tested on Python 3.12)
+2. **Tesseract OCR**:
+   - Windows path: D:\Tesseract-OCR\tesseract.exe (or configured in ackend/config.py)
+3. **API Keys** (stored in .env):
+   - GROQ_API_KEY: Groq API key (for Whisper and GPT-OSS text LLM)
+   - GEMINI_API_KEY: Google Gemini API key (for Gemini 3.6 Flash VLM)
+   - HF_API_KEY: Hugging Face token (for SentenceTransformer models)
 
 ---
 
-<h2><b>Project Structure</b></h2>
+## Installation & Setup
 
-| Folder / File            | Description                                      |
-| ------------------------ | ------------------------------------------------ |
-| **backend/**             | FastAPI application and REST API endpoints.      |
-| **frontend/**            | Streamlit-based user interface.                  |
-| **modules/**             | Core AI pipeline modules.                        |
-| ├── **file_handler.py**  | Upload validation and file management.           |
-| ├── **ocr_extractor.py** | OCR processing for scanned documents and images. |
-| ├── **preprocess.py**    | Cleans extracted text and prepares chunks.       |
-| ├── **embedding.py**     | Generates semantic embeddings.                   |
-| ├── **retriever.py**     | Performs semantic retrieval using vector search. |
-| ├── **llm.py**           | Generates AI responses using retrieved context.  |
-| **uploads/**             | Stores uploaded documents.                       |
-| **outputs/**             | Generated responses and temporary outputs.       |
-| **requirements.txt**     | Project dependencies.                            |
-| **README.md**            | Project documentation.                           |
+1. **Navigate to the project directory**:
+   \\\ash
+   cd D:\multimodel-rag
+   \\\
 
----
+2. **Activate the virtual environment**:
+   \\\ash
+   .\venv\Scripts\Activate.ps1
+   \\\
 
-<h2><b>Features</b></h2>
-
-* Upload PDF and Image documents
-* OCR-based text extraction
-* Intelligent document chunking
-* Semantic vector search
-* Retrieval-Augmented Generation (RAG)
-* Context-aware AI Question Answering
-* Modern conversational interface
-* Fast document retrieval
-* Multimodal document understanding
-* Enterprise-ready architecture
+3. **Install dependencies**:
+   \\\ash
+   pip install -r requirements.txt
+   \\\
 
 ---
 
-<h2><b>API Endpoints</b></h2>
+## Running the Application
 
-### GET /
+Start the FastAPI server:
+\\\ash
+uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload
+\\\
 
-Returns the application status.
-
-### POST /api/upload
-
-Uploads a document.
-
-### POST /api/ask
-
-Accepts a user question and returns an AI-generated answer using retrieved document context.
-
-Request
-
-* document
-* question
-
-Response
-
-* answer
-* retrieved_context
-* confidence
-* metadata
+Open your browser at:
+**http://127.0.0.1:8000**
 
 ---
 
-<h2><b>How to Run the Project</b></h2>
+## API Endpoints Reference
 
-### 1. Install Dependencies
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | / | Serves the glassmorphic web UI (rontend/index.html). |
+| POST | /api/upload | Uploads and automatically ingests any supported document into the vector store. |
+| POST | /api/rag/ask | Queries the vector store with RAG grounding using Groq LLM. |
+| POST | /api/vlm/query | Multimodal query with context grounding using Gemini 3.6 Flash VLM. |
+| GET | /api/vectordb/status | Returns vector store health (document count, chunk count, FAISS/metadata sync). |
+| GET | /api/vectordb/documents | Returns the list of indexed documents and their chunk counts. |
+| POST | /api/vectordb/reset | Resets and clears the FAISS index and metadata store. |
 
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Start FastAPI
-
-```bash
-uvicorn backend.main:app --reload
-```
-
-### 3. Start Streamlit
-
-```bash
-streamlit run frontend/app.py
-```
-
----
-
-<h2><b>Output Description</b></h2>
-
-The system provides:
-
-* AI-generated answers
-* Retrieved document context
-* OCR-extracted text
-* Semantic search results
-* Conversational chat interface
-* Intelligent document understanding
-
----
-
-<h2><b>Current Limitations</b></h2>
-
-* Retrieval quality depends on embedding accuracy.
-* OCR performance depends on image quality.
-* Large documents may increase indexing time.
-* Currently optimized for PDFs and image documents.
-
----
-
-<h2><b>Future Improvements</b></h2>
-
-* Multi-document conversational memory
-* Hybrid keyword + semantic search
-* Agentic RAG workflows
-* Table and chart understanding
-* Audio and video document support
-* Knowledge Graph integration
-* Cloud deployment
-* Authentication and user management
-* Citation highlighting
-* Streaming AI responses

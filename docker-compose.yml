@@ -1,0 +1,17 @@
+﻿services:
+  multimodal-rag:
+    build: .
+    container_name: multimodal-rag-app
+    ports:
+      - "8000:8000"
+    environment:
+      - UPLOAD_DIR=uploads
+      - MAX_FILE_SIZE_MB=10
+      - BACKEND_URL=http://localhost:8000
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - HF_API_KEY=${HF_API_KEY}
+    volumes:
+      - ./uploads:/app/uploads
+      - ./vector_store:/app/vector_store
+    restart: unless-stopped

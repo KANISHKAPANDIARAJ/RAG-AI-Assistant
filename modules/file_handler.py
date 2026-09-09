@@ -1,51 +1,61 @@
 import os
 import shutil
+import re
 from pathlib import Path
-
-import fitz  # PyMuPDF
-
 from fastapi import UploadFile, HTTPException
-from backend.config import UPLOAD_DIR, ALLOWED_EXTENSIONS, MAX_FILE_SIZE_MB
+from backend.config import (
+    UPLOAD_DIR,
+    ALLOWED_EXTENSIONS,
+    MAX_FILE_SIZE_MB,
+    IMAGE_EXTENSIONS,
+    PDF_EXTENSIONS,
+    PPT_EXTENSIONS,
+    AUDIO_EXTENSIONS,
+    TEXT_EXTENSIONS
+)
 
 
-def pdf_to_image(pdf_path: str) -> str:
+def sanitize_filename(filename: str) -> str:
     """
-    Convert the first page of a PDF into a PNG image.
-    Returns the generated image path.
+    Remove potentially dangerous characters from filename to prevent path traversal.
     """
-    doc = fitz.open(pdf_path)
+    # Keep alphanumeric, dots, underscores, dashes, and spaces
+    clean = os.path.basename(filename)
+    clean = re.sub(r'[^\w\s\.-]', '_', clean).strip()
+    return clean or "uploaded_file"
 
-    if len(doc) == 0:
-        doc.close()
-        raise HTTPException(status_code=400, detail="PDF has no pages.")
 
-    page = doc.load_page(0)
-
-    # Higher resolution for better OCR
-    pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
-
-    image_path = str(Path(pdf_path).with_suffix(".png"))
-
-    pix.save(image_path)
-
-    doc.close()
-
-    return image_path
+def get_content_type(ext: str) -> str:
+    ext = ext.lower()
+    if ext in IMAGE_EXTENSIONS:
+        return "image"
+    if ext in PDF_EXTENSIONS:
+        return "pdf"
+    if ext in PPT_EXTENSIONS:
+        return "pptx"
+    if ext in AUDIO_EXTENSIONS:
+        return "audio"
+    if ext in TEXT_EXTENSIONS:
+        return "text"
+    return "document"
 
 
 def save_file(file: UploadFile) -> dict:
-    ext = Path(file.filename).suffix.lower()
+    original_filename = file.filename or "uploaded_file"
+    ext = Path(original_filename).suffix.lower()
 
     if ext not in ALLOWED_EXTENSIONS:
+        supported = ", ".join(sorted(ALLOWED_EXTENSIONS))
         raise HTTPException(
             status_code=400,
-            detail=f"File type '{ext}' not allowed. Use jpg, jpeg, png or pdf."
+            detail=f"File type '{ext}' is not supported. Supported types: {supported}"
         )
 
     os.makedirs(UPLOAD_DIR, exist_ok=True)
+    safe_name = sanitize_filename(original_filename)
+    save_path = os.path.join(UPLOAD_DIR, safe_name)
 
-    save_path = os.path.join(UPLOAD_DIR, file.filename)
-
+    # Save stream to disk
     with open(save_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
 
@@ -55,25 +65,14 @@ def save_file(file: UploadFile) -> dict:
         os.remove(save_path)
         raise HTTPException(
             status_code=400,
-            detail=f"File too large. Max size is {MAX_FILE_SIZE_MB}MB."
+            detail=f"File size ({round(file_size_mb, 1)}MB) exceeds limit of {MAX_FILE_SIZE_MB}MB."
         )
 
-    # -------- PDF --------
-    if ext == ".pdf":
-        image_path = pdf_to_image(save_path)
+    content_type = get_content_type(ext)
 
-        return {
-            "filename": file.filename,
-            "path": image_path,          # PNG path
-            "original_pdf": save_path,   # original PDF
-            "type": "image",             # continue through image pipeline
-            "size_mb": round(file_size_mb, 2)
-        }
-
-    # -------- IMAGE --------
     return {
-        "filename": file.filename,
+        "filename": original_filename,
         "path": save_path,
-        "type": "image",
+        "type": content_type,
         "size_mb": round(file_size_mb, 2)
-    }
+    }

@@ -1,43 +1,47 @@
 from fastapi import APIRouter, HTTPException
-from modules.rag.retriever import retrieve
-from modules.vlm.prompt import build_vlm_prompt
-from modules.vlm.gemini import ask_gemini
-from modules.vlm.response_parser import parse_response
+from modules.rag.pipeline import answer_question
+from backend.config import TOP_K
 
 router = APIRouter()
 
+
 @router.post("/vlm/ask")
 def ask(payload: dict):
+    """
+    Multimodal RAG answering endpoint.
+    Handles text, image visual reasoning, PDFs, slides, and audio.
+    """
     question = payload.get("question")
     image_path = payload.get("image_path")
-    print(f"Received image_path: {image_path}")
     upload_id = payload.get("upload_id")
+    top_k = payload.get("top_k", TOP_K)
 
-    if not question:
-        raise HTTPException(status_code=400, detail="No question provided")
-
-    context = retrieve(question, top_k=3, upload_id=upload_id)
-
-    if not context:
+    if not question or not question.strip():
         raise HTTPException(
-            status_code=404,
-            detail="No matching context found in vector store for this upload"
+            status_code=400,
+            detail="No question provided"
         )
 
-    context_text = "\n\n".join(chunk["text"] for chunk in context)
-
-    raw_answer = ask_gemini(
-        question=question,
-        image_path=image_path,
-        context=context_text
-    )
-    parsed = parse_response(raw_answer)
+    try:
+        result = answer_question(
+            question=question.strip(),
+            image_path=image_path,
+            upload_id=upload_id,
+            top_k=top_k
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error generating answer: {str(e)}"
+        )
 
     return {
         "message": "Answer generated",
         "data": {
-            "question": question,
-            "answer": parsed["answer"],
-            "context_used": len(context)
+            "question": result["question"],
+            "answer": result["answer"],
+            "context_used": result["context_used"],
+            "model_used": result.get("model_used", "groq/gpt-oss-20b"),
+            "sources": result.get("sources", [])
         }
-    }
+    }

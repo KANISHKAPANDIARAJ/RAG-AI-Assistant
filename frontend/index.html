@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal RAG Assistant | Intelligent AI Workspace</title>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- html2pdf Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- Marked for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- Ambient Backdrops -->
+<div class="aurora-bg">
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+</div>
+
+<div class="app-container">
+    
+    <!-- LEFT GLASS SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-logo">
+                <i data-lucide="layers" style="color: var(--accent-glow);"></i>
+                <span>Multimodal RAG</span>
+            </div>
+            <span class="status-indicator" id="system-status-badge" title="System Health">
+                <span class="pulse-dot"></span>
+                <span id="system-status-text">Ready</span>
+            </span>
+        </div>
+
+        <!-- Upload Dropzone -->
+        <div class="sidebar-section">
+            <div class="section-header">
+                <span>Knowledge Base</span>
+                <span class="doc-count-badge" id="kb-count">0 files</span>
+            </div>
+            <div class="dropzone" id="kb-dropzone" onclick="document.getElementById('kb-file-input').click()">
+                <i data-lucide="upload-cloud" size="24" style="color: var(--accent-glow); margin-bottom: 6px;"></i>
+                <div style="font-size: 0.85rem; font-weight: 600;">Upload Documents</div>
+                <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 3px;">
+                    PDF, PPTX, Images, Audio, TXT, DOCX
+                </div>
+                <input type="file" id="kb-file-input" hidden multiple onchange="handleFileUpload(event)">
+            </div>
+            
+            <!-- Ingestion Progress Bar (hidden when idle) -->
+            <div class="progress-box" id="upload-progress-box" style="display: none;">
+                <div class="progress-label">
+                    <span id="progress-filename">Uploading...</span>
+                    <span id="progress-percent">0%</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                </div>
+                <div class="progress-step-text" id="progress-step-text">Processing document...</div>
+            </div>
+
+            <!-- Knowledge Base Documents List -->
+            <div class="knowledge-list" id="knowledge-list">
+                <div class="empty-hint">No files indexed yet. Upload documents above to start searching.</div>
+            </div>
+        </div>
+
+        <!-- Real-Time Vector Store Status Card -->
+        <div class="sidebar-section vector-store-card">
+            <div class="section-header">
+                <span>Vector Store Health</span>
+                <button class="btn-icon-subtle" onclick="refreshVectorStatus()" title="Refresh Status">
+                    <i data-lucide="refresh-cw" size="13"></i>
+                </button>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-val" id="stat-docs">0</div>
+                    <div class="stat-lbl">Documents</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-val" id="stat-chunks">0</div>
+                    <div class="stat-lbl">Chunks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-val" id="stat-vectors">0</div>
+                    <div class="stat-lbl">Vectors</div>
+                </div>
+            </div>
+
+            <div class="sync-status-row">
+                <span class="sync-item">
+                    <span class="sync-dot" id="dot-faiss"></span>
+                    <span>FAISS: <strong id="lbl-faiss">Ready</strong></span>
+                </span>
+                <span class="sync-item">
+                    <span class="sync-dot" id="dot-meta"></span>
+                    <span>Metadata: <strong id="lbl-meta">In Sync</strong></span>
+                </span>
+            </div>
+
+            <button class="btn-reset-store" onclick="confirmResetStore()" title="Safely clear vector database">
+                <i data-lucide="trash-2" size="13"></i> Reset Store
+            </button>
+        </div>
+    </aside>
+
+    <!-- RIGHT MAIN WORKSPACE -->
+    <main class="workspace">
+        
+        <!-- Top Navigation Bar -->
+        <header class="top-navbar">
+            <div class="chat-meta">
+                <span class="chat-meta-title" id="active-chat-title">Multimodal Grounded Assistant</span>
+                <span class="rag-badge" id="model-badge">
+                    <i data-lucide="shield-check" size="13"></i> Local RAG Active
+                </span>
+            </div>
+
+            <!-- Export & Utility Actions -->
+            <div class="export-actions">
+                <button class="action-btn" onclick="clearCurrentChat()" title="Clear Chat History">
+                    <i data-lucide="eraser" size="14"></i> Clear
+                </button>
+                <button class="action-btn" onclick="exportChatJSON()" title="Export JSON including workspace state">
+                    <i data-lucide="file-json" size="14"></i> Export JSON
+                </button>
+                <button class="action-btn" onclick="exportChatPDF()" title="Export conversation to PDF">
+                    <i data-lucide="file-text" size="14"></i> PDF Document
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Conversational Output Area -->
+        <div class="chat-flow" id="chat-flow">
+            <!-- Dynamic Messages inserted here -->
+        </div>
+
+        <!-- Floating Multimodal Input Dock -->
+        <footer class="input-dock">
+            <div class="input-box">
+                <!-- Attached Prompt Files Preview -->
+                <div class="attached-preview" id="attached-preview"></div>
+                
+                <div class="input-row">
+                    <textarea id="user-input" placeholder="Ask anything about your documents, slides, diagrams, or audio..." rows="1" onkeydown="handleKeyDown(event)"></textarea>
+                    
+                    <div class="input-actions">
+                        <button class="icon-btn" onclick="document.getElementById('prompt-file-input').click()" title="Attach file to prompt (e.g. image for visual reasoning)">
+                            <i data-lucide="paperclip" size="18"></i>
+                        </button>
+                        <input type="file" id="prompt-file-input" hidden onchange="handlePromptFileAttach(event)">
+                        
+                        <button class="btn-submit" id="btn-submit" onclick="submitMessage()" title="Send Message">
+                            <i data-lucide="arrow-up" size="18"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

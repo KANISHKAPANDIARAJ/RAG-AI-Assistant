@@ -11,3 +11,8 @@ sentence-transformers
 faiss-cpu
 groq
 ultralytics
+huggingface-hub
+google-genai
+PyMuPDF
+python-pptx
+python-docx

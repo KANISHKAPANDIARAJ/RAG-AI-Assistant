@@ -1,14 +1,13 @@
 from pathlib import Path
-
-from google import genai
-from google.genai import types
 import mimetypes
 import traceback
+from google import genai
+from google.genai import types
 from modules.vlm.client import get_gemini_client
 from modules.vlm.groq_client import ask_groq
+from backend.config import GEMINI_MODEL
 
-
-MODEL_NAME = "gemini-3.6-flash"
+MODEL_NAME = GEMINI_MODEL
 
 
 def ask_gemini(
@@ -17,18 +16,23 @@ def ask_gemini(
     context: str = None
 ) -> str:
     """
-    Analyze an image together with retrieved OCR context.
-
-    Falls back to Groq if Gemini fails.
+    Perform visual reasoning on an image/page/slide together with retrieved context.
+    Falls back gracefully to Groq text LLM if Gemini is unavailable or rate-limited.
     """
-
     prompt = f"""
-You are a multimodal Retrieval-Augmented Generation (RAG) assistant.
+You are an expert multimodal Retrieval-Augmented Generation (RAG) assistant.
 
-You have two sources of information:
+You have access to:
+1. Retrieved document context from the vector database.
+2. An accompanying image / rendered slide / page (if available).
 
-1. OCR text retrieved from the vector database.
-2. The uploaded image.
+Rules:
+- Answer the user's question accurately and concisely.
+- Base your answers strictly on the retrieved context and visual evidence.
+- Do NOT invent or hallucinate unsupported details.
+- If neither the image nor context contains the answer, state that clearly.
+- Reference specific sections, pages, slides, or timestamps when available.
+
 
 Always answer using the retrieved OCR context first.
 

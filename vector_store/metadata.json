@@ -1,1 +1,920 @@
-[{"text": "Please update details for applicable beneficiary. Card No Beneficiary Name 7950038 Primary Beneficiary Card Handed Over To Beneficiary List of all beneficiaries :- 0002232292 Action Eligible (No Action Required) 7950088 Card Handed Over To Beneficiary Eligible (No Action Required) 7950109 Card Handed over, Eligibility Required Eligibility not Validated. Card Blocked. Contact OIC PC 7950127 Card Handed Over To Beneficiary Eligible (No Action Required) 7950138 Card Handed over. Eligibility Required Eligibility not Validated. Card Blocked. Contact OIC PC"}, {"text": "Please update details for applicable beneficiary. Card No Beneficiary Name 7950038 Primary Beneficiary Card Handed Over To Beneficiary List of all beneficiaries :- 0002232292 Action Eligible (No Action Required) 7950088 Card Handed Over To Beneficiary Eligible (No Action Required) 7950109 Card Handed over, Eligibility Required Eligibility not Validated. Card Blocked. Contact OIC PC 7950127 Card Handed Over To Beneficiary Eligible (No Action Required) 7950138 Card Handed over. Eligibility Required Eligibility not Validated. Card Blocked. Contact OIC PC"}, {"text": "This image contains: dog"}, {"text": "This image contains: dog"}, {"text": "This image contains: dog", "upload_id": "c3e074bd", "source_file": "images.jpg"}, {"text": "HOW TO IMPROVE PERFORMANCE | IMPROVED ARCHITECTURE EXPECTED OUTPUT (IMPROVED) BEFORE (Annotated) ATER (Annotated) 1. Improve Data (Most Important) Collect CAD-specitic dataset cur oF \u00bb Manually abel Bocos for: dimensions, arrows, levels, = es ea as text cofons ies bearings, slopes notes, ete. J rca a i t \u2014\u2014\" @ PDF Render (High DPI) N 21990 OUT T OUT OF 200 00 + Use tools: CVAT / Labeling / Robofiow \u00ae \u00ae Prepracessing i y \u2018Train custom YOLOv8 modet Binarize, Deskew, Dencise, Crop L 212) Ne + Start from YOLOvem: mm + Train on your CAD dataset (not general COCO objects) __ J _ _ @ More data = better shapes & labels, Alignment / Registration (Feature + ECC) U Render PDFs at higher DPI (00-600) i + Binarize (adaptive threshold) removes noise Difference Detection ere {$5IM + Canny + Morphology) a = Remove border block before a cs a @ [me as Ea =| wea | J | A : = Object Detection tee 3. Better Difference Detection =< Use SSIM + Canny + Morphology \u201cy (Reduces small noise changes) ero \u2018Cluster nearby changes into single region Text + Object Matching Fite tiny boxes by ares threshold {Rules +", "upload_id": "e2102753", "source_file": "WhatsApp Image 2026-07-10 at 2.52.39 PM.jpeg"}, {"text": "@ [me as Ea =| wea | J | A : = Object Detection tee 3. Better Difference Detection =< Use SSIM + Canny + Morphology \u201cy (Reduces small noise changes) ero \u2018Cluster nearby changes into single region Text + Object Matching Fite tiny boxes by ares threshold {Rules + Hungarian Matching) ie a B oe, @ eee 4, Better Text / Dimension Extraction tT ELEVATION ON Gi. Use Tesseract with whitatist for nmbers Change Classification sm 6 or --psm 7 (Added / Removed / Modified) [EE } Added ew) \u2018Removed Bl Most (oimension change) I Geometry change (via Preprocess ROI before OCR (sharpen + threshold) i Match dimension text with spatial rules Hear dr Visualization MATCHED CHANGE LIST (Better Bounding Boxes) WHY YOUR CURRENT RESULTS ARE OFF (Bounding Boxes + Numbers) : : > Using general YOLO\u00a5em (COCO) -+ wrong abject ; 5 | te Daseiton Bounding Box | Contdence 5. Better Matching Logic = | 3 Low nie images ~ wrong OCR & detections @ Match by: a [a Added [New dimension label | (2278,1988,2425,1455] 097 | >< Binal as Charges > may te Bava (distaries) Report Generation re si a No proper filtering & clustering + boxes:", "upload_id": "e2102753", "source_file": "WhatsApp Image 2026-07-10 at 2.52.39 PM.jpeg"}, {"text": "Contdence 5. Better Matching Logic = | 3 Low nie images ~ wrong OCR & detections @ Match by: a [a Added [New dimension label | (2278,1988,2425,1455] 097 | >< Binal as Charges > may te Bava (distaries) Report Generation re si a No proper filtering & clustering + boxes: here te aan ee ae 2 [fons [cena | | one || % Heer tana oses ee + Units & value similarity See eee i | a al (070,280,080 1460) | one _ || 2 Stl fest macting~ mises nearby mension + Object type from YOLO) oe TERETE 4 | Geometry cneage | Change near left pier region {970,2040,1080,2189} oer | WHAT TO DO NEXT (ACTION PLAN) Jse Hungarian Matching for 1-to-1 matching Create CAD dataset (500-2000 images) a ee eo Ee So ral Bll es Spe Improve preprocessing pipeline (higher DP, binaization) 7 | Geometry change | Change near foundation line 1950,2440,1070,2520) 076 | Use better diff (SSIM + Canny + Morphology + clustering) Add confidence score Improve OCR (whitelist + preprocessing + spatial rules) Different colors for: Acded / Removed / Changed & | change | Changenear approach/road edge | {80,1040,140,1120) 077 |) Use Hungarian Matching for text/dimension", "upload_id": "e2102753", "source_file": "WhatsApp Image 2026-07-10 at 2.52.39 PM.jpeg"}, {"text": "foundation line 1950,2440,1070,2520) 076 | Use better diff (SSIM + Canny + Morphology + clustering) Add confidence score Improve OCR (whitelist + preprocessing + spatial rules) Different colors for: Acded / Removed / Changed & | change | Changenear approach/road edge | {80,1040,140,1120) 077 |) Use Hungarian Matching for text/dimension matching & Tune thresholds & filters (area, confidence, distance) MODELS & TOOLS = More labeled CAD dsta = Big improvement Better preprocessing = Cleaner results Better matching logic = Correct bounding boxes Custom YOLO + Rules + OCR = Accurate report YoLov8 (Custom CAD) Object Detection foe. | ance,", "upload_id": "e2102753", "source_file": "WhatsApp Image 2026-07-10 at 2.52.39 PM.jpeg"}, {"text": "This image contains: dog", "upload_id": "e88d7918", "source_file": "images.jpg"}, {"text": "This image contains: dog", "upload_id": "e086978c", "source_file": "images.jpg"}, {"text": "This image contains: dog", "upload_id": "20a675bc", "source_file": "images.jpg"}, {"text": "This image contains: dog", "upload_id": "196a741a", "source_file": "images.jpg"}, {"text": "This image contains: dog", "upload_id": "d186ccd6", "source_file": "images.jpg"}, {"text": "This image contains: dog", "upload_id": "b67df246", "source_file": "images.jpg"}, {"text": "This image contains: dog", "upload_id": "4b8aadae", "source_file": "images.jpg"}, {"text": "DrawDiff Pro Engineering Revision Analyzer {Al Dashboard @\u00ae_ New Comparison \u00ae ry \u00a35 Projects (2) Reports MANAGE (} Templat [EJ Drawing Sets && Team SETTINGS 3 Preferences @ APisettings QL Notifications Al-Powered Engineering Insights Detect, analyze and understand drawing revisions instantly. Upgrade Plan Kanishka Comparison Report | v ) Dashboard > History > CMP-20250710-001 Total Revisions 3 \u2018Changes Detected Overall Simitarity 98.1% Very High Simitarity WD B Overlay \u00ab3 Changes Only Heat map. BEFORE (Original) 4, Download Report Severity Level Changed Area Moderate 0.82% Review Recommended AFTER (Revised) 7 Of Total Drawing Area ON, \u00a9 Added \u00a9 Removed \u00a9 Modified @ Annotation \u00a9 Info Al Summary Regenerate Summary \u2018The comparison identified & significant changes between the drawings. The most critical change is the dimension modification from 29 mm to 7.500 m in the main plan. Additionally, one dimension has been removed and one annotation has been \u2018updated near \u201cTO CITY\". These changes may impact structural specifications and require engineering review. Structural Impact Recommensdstion Medium Design Risk Medium Review Required DeawDiff Pro v1.0.0 @ @ Dimension Changes 163.3%) @ Annotation Changes 163.9%) @ Removed Elements 13.9%) \u2018Change Density Total Changes 3 0.82% \u2018Your data is secure and Theme eS Share Light", "upload_id": "44385ca7", "source_file": "ChatGPT Image Jul 30, 2026, 10_11_43 AM.png"}, {"text": "These changes may impact structural specifications and require engineering review. Structural Impact Recommensdstion Medium Design Risk Medium Review Required DeawDiff Pro v1.0.0 @ @ Dimension Changes 163.3%) @ Annotation Changes 163.9%) @ Removed Elements 13.9%) \u2018Change Density Total Changes 3 0.82% \u2018Your data is secure and Theme eS Share Light 12.48 Processing Time Detected Changes @ recived Dimension changed from 29 mm to 7.500.m High impact @ \u2014 \u2014 Dimension 29 mm removed High impact GB change Annotation updated near TOCITY = Medium Impsct View All Changes Report Download Generate a professional report with all changes, summaries and vieualizations. PDF Report (Detailed) v 4, Download PDF Poges Format 2 Aa Generated 10 Jul 2026, 01:41PM 2026 DrawDiff Pro. All rights rese New Comparison & Dark \u00a9", "upload_id": "44385ca7", "source_file": "ChatGPT Image Jul 30, 2026, 10_11_43 AM.png"}, {"text": "v) \u00a9\\s Si >|@ (x + > Ask Gemini = o x \u20ac > CG \u00a9 localhost:501 > (\u00a9 All Bookmarks (sp) Apps and offersApp... ~~ The EMNIST Datase... \u00a9) prvbaraiya/Air-wri... Multimodal RAG Upload an image or PDF to get started Choose a file transcript.pdf + 106.4KB PDF uploaded: transcript.pdf Deploy", "upload_id": "d0ef7b55", "source_file": "Screenshot 2026-08-05 151708.png"}, {"text": "YhatsApy KGISL institute of Technology Application Support Engineer x | S\u20ac New chat- Claude four information \u2014 Google P @ Institute of Te gy is) i le) @ Notsecure 0) Apps end offersApp. The EMNISTDatase.. \u20ac) @ Job Boards- 11 hou. [5 AllBookmarks KGiSL Institute of ee Affiliated to Anna University, Approved by AICTE, Recognised by UGG LOGOUT Student's Profile J RESULTS OF FIFTH SEMESTER : [2025- ODD SEMESTER - END SEMESTER] Int: Assessments Sem Course Code Name of the Course Credit Result GR. G. 5 AD3501 Deep Learning 3.00 PASS B+ 7.00 End SemiResults | 5 CW3551 Data and Information Security 3.00 PASS A 8.00 Exam Registration] \u2014_____\u2014_ 5 CS3551 Distributed Computing 3.00 PASS Bt 7.00 \u2018Open 5 CCS334__ Big Data Analytics 3.00 PASS B+ 7.00 5 CCS344 Professional Elective I: Ethical Hacking 3.00 PASS B+ 7.00 5 CCS362 Professional Elective II: Security and Privacy in Cloud 3.00 PASS A 8.00 5 _MX3084 Mandatory Course I: Disaster Risk Reduction and Management 0.00 PASS A+ 9.00 5 AD3511 Deep Learning Laboratory 2.00 PASS \u00a9 10.00 5 AD3512 Summer internship 2.00 PASS O 10.00", "upload_id": "6dc0c1e2", "source_file": "transcript.pdf"}, {"text": "A 8.00 5 _MX3084 Mandatory Course I: Disaster Risk Reduction and Management 0.00 PASS A+ 9.00 5 AD3511 Deep Learning Laboratory 2.00 PASS \u00a9 10.00 5 AD3512 Summer internship 2.00 PASS O 10.00", "upload_id": "6dc0c1e2", "source_file": "transcript.pdf"}, {"text": "\u00ae Ask Gemini KGISL Institute of Technology e.ac.in/da a User = KANISHKA P Affiliated to Anna University, Approved by AICTE, Recognised by UGC, LOGOUT Sy Disclaimer : The college is not responsible for any inadvertent error that may have crept in the results being published on Net. The results published on Net are for immediate information to the students. = These cannot be treated as original mark sheets. Student's Profile RESULTS OF FIFTH SEMESTER : [2025 - ODD SEMESTER - END SEN Int. Assessments End Sem Results", "upload_id": "6ee71eac-8a15-4acd-957a-4df37d3f4306", "source_file": "uploads\\transcript.png"}, {"text": "YhatsApy KGISL institute of Technology Application Support Engineer x | S\u20ac New chat- Claude four information \u2014 Google P @ Institute of Te gy is) i le) @ Notsecure 0) Apps end offersApp. The EMNISTDatase.. \u20ac) @ Job Boards- 11 hou. [5 AllBookmarks KGiSL Institute of ee Affiliated to Anna University, Approved by AICTE, Recognised by UGG LOGOUT Student's Profile J RESULTS OF FIFTH SEMESTER : [2025- ODD SEMESTER - END SEMESTER] Int: Assessments Sem Course Code Name of the Course Credit Result GR. G. 5 AD3501 Deep Learning 3.00 PASS B+ 7.00 End SemiResults | 5 CW3551 Data and Information Security 3.00 PASS A 8.00 Exam Registration] \u2014_____\u2014_ 5 CS3551 Distributed Computing 3.00 PASS Bt 7.00 \u2018Open 5 CCS334__ Big Data Analytics 3.00 PASS B+ 7.00 5 CCS344 Professional Elective I: Ethical Hacking 3.00 PASS B+ 7.00 5 CCS362 Professional Elective II: Security and Privacy in Cloud 3.00 PASS A 8.00 5 _MX3084 Mandatory Course I: Disaster Risk Reduction and Management 0.00 PASS A+ 9.00 5 AD3511 Deep Learning Laboratory 2.00 PASS \u00a9 10.00 5 AD3512 Summer internship 2.00 PASS O 10.00", "upload_id": "054fa5e1", "source_file": "transcript.pdf"}, {"text": "A 8.00 5 _MX3084 Mandatory Course I: Disaster Risk Reduction and Management 0.00 PASS A+ 9.00 5 AD3511 Deep Learning Laboratory 2.00 PASS \u00a9 10.00 5 AD3512 Summer internship 2.00 PASS O 10.00", "upload_id": "054fa5e1", "source_file": "transcript.pdf"}, {"text": "\u00ae Ask Gemini KGISL Institute of Technology e.ac.in/da a User = KANISHKA P Affiliated to Anna University, Approved by AICTE, Recognised by UGC, LOGOUT Sy Disclaimer : The college is not responsible for any inadvertent error that may have crept in the results being published on Net. The results published on Net are for immediate information to the students. = These cannot be treated as original mark sheets. Student's Profile RESULTS OF FIFTH SEMESTER : [2025 - ODD SEMESTER - END SEN Int. Assessments End Sem Results", "upload_id": "9e5ac794-ba52-453e-8413-992fcfe53c8a", "source_file": "uploads\\transcript.png"}, {"text": "YhatsApy KGISL institute of Technology Application Support Engineer x | S\u20ac New chat- Claude four information \u2014 Google P @ Institute of Te gy is) i le) @ Notsecure 0) Apps end offersApp. The EMNISTDatase.. \u20ac) @ Job Boards- 11 hou. [5 AllBookmarks KGiSL Institute of ee Affiliated to Anna University, Approved by AICTE, Recognised by UGG LOGOUT Student's Profile J RESULTS OF FIFTH SEMESTER : [2025- ODD SEMESTER - END SEMESTER] Int: Assessments Sem Course Code Name of the Course Credit Result GR. G. 5 AD3501 Deep Learning 3.00 PASS B+ 7.00 End SemiResults | 5 CW3551 Data and Information Security 3.00 PASS A 8.00 Exam Registration] \u2014_____\u2014_ 5 CS3551 Distributed Computing 3.00 PASS Bt 7.00 \u2018Open 5 CCS334__ Big Data Analytics 3.00 PASS B+ 7.00 5 CCS344 Professional Elective I: Ethical Hacking 3.00 PASS B+ 7.00 5 CCS362 Professional Elective II: Security and Privacy in Cloud 3.00 PASS A 8.00 5 _MX3084 Mandatory Course I: Disaster Risk Reduction and Management 0.00 PASS A+ 9.00 5 AD3511 Deep Learning Laboratory 2.00 PASS \u00a9 10.00 5 AD3512 Summer internship 2.00 PASS O 10.00", "upload_id": "ee951a3d", "source_file": "transcript.pdf"}, {"text": "A 8.00 5 _MX3084 Mandatory Course I: Disaster Risk Reduction and Management 0.00 PASS A+ 9.00 5 AD3511 Deep Learning Laboratory 2.00 PASS \u00a9 10.00 5 AD3512 Summer internship 2.00 PASS O 10.00", "upload_id": "ee951a3d", "source_file": "transcript.pdf"}]
+[
+  {
+    "text": "Subject Name & Code : OME355/INDUSTRIAL DESIGN & RAPID PROTOTYPING TECHNIQUES Branch & Department : AI&DS / CSE Year & Semester : IV / VII Academic Year :2026 - 27 KGiSL Institute of Technology (An Autonomous Institution) Affiliated to Anna University, Approved by AICTE, Recognized by UGC,Accredited by NAAC & NBA (B.E-CSE,B.E-ECE, B.Tech-IT), 365, KGiSL Campus, Thudiyalur Road, Saravanampatti, Coimbatore – 641035. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 1,
+    "chunk_id": 1,
+    "image_path": null
+  },
+  {
+    "text": "Syllabus UNIT I - UI/UX 9 Fundamental concepts in UI & UX - Tools - Fundamentals of design principles - Psychology and Human Factors for User Interface Design - Layout and composition for Web, Mobile and Devices - Typography - Information architecture - Color theory - Design process flow, wireframes, best practices in the industry -User engagement ethics – Design alternatives. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 2,
+    "chunk_id": 2,
+    "image_path": null
+  },
+  {
+    "text": "Warm-Up OME355/IDRPT/IV/VIISEM/KG-KiTE After completing this lecture, you will be able to: • Define User Interface (UI) and User Experience (UX). • Explain the differences between UI and UX. • Describe the importance of UI/UX in product development. • Identify common UI components. • Understand the UX design process. • Recognize the role of UI/UX in modern industries.",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 3,
+    "chunk_id": 3,
+    "image_path": null
+  },
+  {
+    "text": "Introduction • Technology has transformed the way people interact with digital products such as websites, mobile applications, ATMs, smart TVs, wearable devices, and industrial control systems. • Two important concepts that contribute to this goal are User Interface (UI) and UserExperience (UX). UI focuses on the appearance and interactive elements of a product. • UX focuses on the overall experience a user has while interacting with the product. • Together, UI and UX help create products that are visually appealing, easy to learn, efficient to use, and capable of satisfying user needs. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 4,
+    "chunk_id": 4,
+    "image_path": null
+  },
+  {
+    "text": "What is User Interface (UI)? A User Interface is the collection of visual elements and interactive controls that enable communication between users and a computer system. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 5,
+    "chunk_id": 5,
+    "image_path": null
+  },
+  {
+    "text": "What is an Algorithm? OME355/IDRPT/IV/VIISEM/KG-KiTE Common UI Elements Buttons Icons Text fields Menus Navigation bars Images Sliders Check boxes Radio buttons Progress bars Dialog boxes",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 6,
+    "chunk_id": 6,
+    "image_path": null
+  },
+  {
+    "text": "Characteristics of a Good UI A well-designed interface should be: • Simple • Attractive • Consistent • Responsive • Easy to understand • Accessible • Fast OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 7,
+    "chunk_id": 7,
+    "image_path": null
+  },
+  {
+    "text": "What is User Experience (UX)? User Experience is the overall perception, emotions, usability, and satisfaction experienced by a user while interacting with a product. • Components of UX OME355/IDRPT/IV/VIISEM/KG-KiTE Ease of learning Efficiency Memorability Error prevention Accessibility User satisfaction",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 8,
+    "chunk_id": 8,
+    "image_path": null
+  },
+  {
+    "text": "Example • Suppose two food delivery apps have similar features. • App A loads quickly, has intuitive navigation, and completes orders in three steps. • App B is slow, cluttered, and requires many unnecessary clicks. • Most users will prefer because it provides a better user experience. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 9,
+    "chunk_id": 9,
+    "image_path": null
+  },
+  {
+    "text": "User Experience Process OME355/IDRPT/IV/VIISEM/KG-KiTE Need Discover Product Learn Interface Perform Tasks Complete Goal User Satisf action",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 10,
+    "chunk_id": 10,
+    "image_path": null
+  },
+  {
+    "text": "Difference Between UI and UX OME355/IDRPT/IV/VIISEM/KG-KiTE User Interface (UI) User Experience (UX) Focuses on appearance Focuses on experience Concerned with visual design Concerned with usability Includes buttons, icons, colors Includes emotions and satisfaction Deals with interaction elements Deals with complete user journey Designer creates layouts Designer researches user behavior",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 11,
+    "chunk_id": 11,
+    "image_path": null
+  },
+  {
+    "text": "So, how do we measure performance? Consider a car. • OME355/IDRPT/IV/VIISEM/KG-KiTE UI Steering wheel Dashboard, Touchscreen Speedometer, Gear lever UX Driving comfort Ease of steering Safety,Fuel efficiency",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 12,
+    "chunk_id": 12,
+    "image_path": null
+  },
+  {
+    "text": "Importance of UI/UX Effective UI/UX design provides several benefits: ⮚Improves customer satisfaction ⮚Increases user engagement ⮚Reduces learning time ⮚Improves accessibility ⮚Enhances productivity ⮚Builds brand loyalty ⮚Reduces development costs by identifying usability issues early ⮚Increases product adoption and market success OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 13,
+    "chunk_id": 13,
+    "image_path": null
+  },
+  {
+    "text": "Evolution of User Interfaces Generation Interface Type 1960s Punch Cards 1970s Command Line Interface (CLI) 1980s Graphical User Interface (GUI) 2000s Web Interfaces 2010s Mobile Touch Interfaces Present Voice, Gesture, AR/VR Interfaces OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 14,
+    "chunk_id": 14,
+    "image_path": null
+  },
+  {
+    "text": "Subject Name & Code : OME355/INDUSTRIAL DESIGN & RAPID PROTOTYPING TECHNIQUES Branch & Department : Computer Science and Engineering Year & Semester : IV / VII Academic Year :2026 - 27 KGiSL Institute of Technology (An Autonomous Institution) Affiliated to Anna University, Approved by AICTE, Recognized by UGC,Accredited by NAAC & NBA (B.E-CSE,B.E-ECE, B.Tech-IT), 365, KGiSL Campus, Thudiyalur Road, Saravanampatti, Coimbatore – 641035. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 15,
+    "chunk_id": 15,
+    "image_path": null
+  },
+  {
+    "text": "Syllabus UNIT I - UI/UX 9 Fundamental concepts in UI & UX - Tools - Fundamentals of design principles - Psychology and Human Factors for User Interface Design - Layout and composition for Web, Mobile and Devices - Typography - Information architecture - Color theory - Design process flow, wireframes, best practices in the industry -User engagement ethics – Design alternatives313. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 16,
+    "chunk_id": 16,
+    "image_path": null
+  },
+  {
+    "text": "What are UI/UX Design Tools? OME355/IDRPT/IV/VIISEM/KG-KiTE • UI/UX design tools are software applications used to create, prototype, collaborate, and test user interfaces before software development begins. • Why use UI/UX tools? • Visualize ideas quickly • Create wireframes and prototypes • Improve collaboration among designers and developers • Conduct usability testing • Reduce development cost and time",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 17,
+    "chunk_id": 17,
+    "image_path": null
+  },
+  {
+    "text": "Introduction OME355/IDRPT/IV/VIISEM/KG-KiTE Tool Purpose Advantages Figma UI Design & Prototyping Cloud-based, real-time collaboration Adobe XD Wireframing & Prototyping Easy integration with Adobe Creative Suite Sketch UI Design Popular for macOS, plugin support Balsamiq Low-fidelity Wireframes Quick sketch-style designs InVision Interactive Prototypes Easy sharing and collaboration Miro Brainstorming & User Flow Team collaboration and whiteboarding",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 18,
+    "chunk_id": 18,
+    "image_path": null
+  },
+  {
+    "text": "UI Design Workflow OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 19,
+    "chunk_id": 19,
+    "image_path": null
+  },
+  {
+    "text": "Fundamentals of Design Principles • Design principles help create interfaces that are attractive, usable, and consistent. Key Principles • Balance • Contrast • Alignment • Repetition • Proximity • Hierarchy • White Space • Consistency • Emphasis OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 20,
+    "chunk_id": 20,
+    "image_path": null
+  },
+  {
+    "text": "Fundamentals of Design Principles Balance Balance distributes visual elements evenly across a page. Types • Symmetrical Balance • Asymmetrical Balance • Radial Balance Example: A login page with the logo centered and input fields evenly aligned. Contrast • Contrast makes important elements stand out. Contrast can be created using: • Color ,Size ,Shape ,Font weight ,Spacing Example: A blue \"Sign Up\" button on a white background. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 21,
+    "chunk_id": 21,
+    "image_path": null
+  },
+  {
+    "text": "Fundamentals of Design Principles Alignment • Alignment organizes content to create a clean and professional appearance. • Good alignment improves readability and user experience. • Example: Text fields aligned vertically with equal spacing. Repetition • Repeating design elements creates consistency. Examples: • Same button style • Same font family • Same icon style • Same navigation menu OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 22,
+    "chunk_id": 22,
+    "image_path": null
+  },
+  {
+    "text": "Fundamentals of Design Principles Proximity • Related elements should be grouped together. Example: Username and password fields placed close to each other in a login form. Visual Hierarchy • Hierarchy guides the user's attention. Use: • Large headings • Bold fonts • Colors • White space • Icons • Example: Product title displayed larger than the product description. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 23,
+    "chunk_id": 23,
+    "image_path": null
+  },
+  {
+    "text": "Fundamentals of Design Principles White Space - White space (negative space) is the empty area between elements. Benefits: • Improves readability • Reduces clutter • Focuses attention • Enhances aesthetics Consistency-Consistency ensures that similar elements behave and appear the same throughout the application. Maintain consistency in: • Colors ,Fonts,Buttons,Icons,Navigation OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 24,
+    "chunk_id": 24,
+    "image_path": null
+  },
+  {
+    "text": "Fundamentals of Design Principles Emphasis • Emphasis highlights the most important element. Techniques: • Bright colors • Larger size • Bold text • Animation • Shadows • Example: \"Buy Now\" button highlighted in green. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 25,
+    "chunk_id": 25,
+    "image_path": null
+  },
+  {
+    "text": "Example: Applying Design Principles OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 26,
+    "chunk_id": 26,
+    "image_path": null
+  },
+  {
+    "text": "Example: Applying Design Principles OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 27,
+    "chunk_id": 27,
+    "image_path": null
+  },
+  {
+    "text": "Real-World Example OME355/IDRPT/IV/VIISEM/KG-KiTE Amazon Homepage • Clear visual hierarchy • Consistent navigation • Strong contrast for call-to-action buttons • Organized categories • Effective use of white space • Discuss with students how these principles improve usability.",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 28,
+    "chunk_id": 28,
+    "image_path": null
+  },
+  {
+    "text": "Real-World Example OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 29,
+    "chunk_id": 29,
+    "image_path": null
+  },
+  {
+    "text": "Design a simple \"Student Login Page\" on paper or in Figma https://www.figma.com/make/NI916FzSpp6S4Xf8bwPzNT/Student-Login- Page?t=dWdbFhifazUcgu5v-20&fullscreen=1 OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 30,
+    "chunk_id": 30,
+    "image_path": null
+  },
+  {
+    "text": "Subject Name & Code : OME355/INDUSTRIAL DESIGN & RAPID PROTOTYPING TECHNIQUES Branch & Department : AI&DS / CSE Year & Semester : IV / VII Academic Year :2026 - 27 KGiSL Institute of Technology (An Autonomous Institution) Affiliated to Anna University, Approved by AICTE, Recognized by UGC,Accredited by NAAC & NBA (B.E-CSE,B.E-ECE, B.Tech-IT), 365, KGiSL Campus, Thudiyalur Road, Saravanampatti, Coimbatore – 641035. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 31,
+    "chunk_id": 31,
+    "image_path": null
+  },
+  {
+    "text": "Syllabus UNIT I - UI/UX 9 Fundamental concepts in UI & UX - Tools - Fundamentals of design principles - Psychology and Human Factors for User Interface Design - Layout and composition for Web, Mobile and Devices - Typography - Information architecture - Color theory - Design process flow, wireframes, best practices in the industry -User engagement ethics – Design alternatives313. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 32,
+    "chunk_id": 32,
+    "image_path": null
+  },
+  {
+    "text": "Introduction OME355/IDRPT/IV/VIISEM/KG-KiTE • A good user interface is not only attractive but also organized and easy to navigate. Four important concepts contribute to this: • Layout & Composition – Arranging elements on the screen. • Typography – Choosing and formatting text. • Information Architecture (IA) – Structuring content logically. • Color Theory – Using colors effectively to improve usability and aesthetics. • Together, these principles create interfaces that are easy to understand and enjoyable to use.",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 33,
+    "chunk_id": 33,
+    "image_path": null
+  },
+  {
+    "text": "Layout and Composition Layout refers to the arrangement of UI elements on a screen, while composition refers to how these elements work together to create a balanced and visually appealing design. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 34,
+    "chunk_id": 34,
+    "image_path": null
+  },
+  {
+    "text": "UI Design Workflow Objectives of a Good Layout • Improve readability. • Guide user attention. • Reduce clutter. • Enhance usability. • Maintain consistency. OME355/IDRPT/IV/VIISEM/KG-KiTE Principles of Good Layout • Alignment • Balance • Consistency • White space • Visual hierarchy • Grid systems",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 35,
+    "chunk_id": 35,
+    "image_path": null
+  },
+  {
+    "text": "Grid System • A grid system divides the screen into rows and columns to ensure consistent placement of elements. • Advantages • Better alignment. • Responsive design. • Easy maintenance. • Consistent spacing. Example: Bootstrap's 12-column grid system is widely used in web development. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 36,
+    "chunk_id": 36,
+    "image_path": null
+  },
+  {
+    "text": "Grid System OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 37,
+    "chunk_id": 37,
+    "image_path": null
+  },
+  {
+    "text": "Information Architecture (IA) Information Architecture is the process of organizing and structuring information so users can find what they need easily. Objectives • Simplify navigation. • Reduce search time. • Improve user satisfaction OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 38,
+    "chunk_id": 38,
+    "image_path": null
+  },
+  {
+    "text": "Information Architecture (IA) OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 39,
+    "chunk_id": 39,
+    "image_path": null
+  },
+  {
+    "text": "Example: E-commerce Website Structure Home ├──Electronics ├──Mobiles ├──Laptops └──Accessories ├──Fashion ├──Men ├──Women └──Kids └──Grocery OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 40,
+    "chunk_id": 40,
+    "image_path": null
+  },
+  {
+    "text": "Navigation Design A navigation system allows users to move between pages. Types of Navigation • Top Navigation Bar • Side Navigation Menu • Bottom Navigation (Mobile) • Hamburger Menu • Breadcrumb Navigation OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 41,
+    "chunk_id": 41,
+    "image_path": null
+  },
+  {
+    "text": "OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 42,
+    "chunk_id": 42,
+    "image_path": null
+  },
+  {
+    "text": "Color Theory Color theory explains how colors interact and how they influence user perception and emotions. Importance • Enhances visual appeal. • Improves readability. • Highlights important elements. • Creates emotional connections. • Strengthens brand identity. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 43,
+    "chunk_id": 43,
+    "image_path": null
+  },
+  {
+    "text": "Color Theory Color Wheel • The color wheel consists of: • Primary Colors: Red, Blue, Yellow • Secondary Colors: Green, Orange, Purple • Tertiary Colors: Combination of primary and secondary colors OME355/IDRPT/IV/VIISEM/KG-KiTE Scheme Description Monochromatic Different shades of one color Analogous Adjacent colors on the color wheel Complementary Opposite colors on the color wheel Triadic Three evenly spaced colors",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 44,
+    "chunk_id": 44,
+    "image_path": null
+  },
+  {
+    "text": "Real-World Example OME355/IDRPT/IV/VIISEM/KG-KiTE Color Meaning Example Blue Trust, Security Banking apps Green Growth, Health Healthcare apps Red Urgency, Danger Error messages Yellow Energy, Attention Warnings Orange Creativity Food delivery apps Black Luxury, Elegance Premium brands White Simplicity, Cleanliness Medical websites",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 45,
+    "chunk_id": 45,
+    "image_path": null
+  },
+  {
+    "text": "Accessibility in Color Usage When designing interfaces: • Ensure sufficient contrast between text and background. • Avoid using color alone to convey information. • Use icons or labels in addition to colors. • Consider users with color vision deficiencies. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 46,
+    "chunk_id": 46,
+    "image_path": null
+  },
+  {
+    "text": "Real-World Example Google Classroom • Simple layout with consistent spacing. • Clear typography using Roboto font. • Logical information architecture for classes and assignments. • Blue and green accents to indicate actions and status. • Responsive design for desktop and mobile devices. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 47,
+    "chunk_id": 47,
+    "image_path": null
+  },
+  {
+    "text": "Real-World Example Task: Design the home page of a college website. Include: • Header with logo • Navigation menu • Banner image • News section • Footer OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 48,
+    "chunk_id": 48,
+    "image_path": null
+  },
+  {
+    "text": "Subject Name & Code : OME355/INDUSTRIAL DESIGN & RAPID PROTOTYPING TECHNIQUES Branch & Department : AI&DS / CSE Year & Semester : IV / VII Academic Year :2026 - 27 KGiSL Institute of Technology (An Autonomous Institution) Affiliated to Anna University, Approved by AICTE, Recognized by UGC,Accredited by NAAC & NBA (B.E-CSE,B.E-ECE, B.Tech-IT), 365, KGiSL Campus, Thudiyalur Road, Saravanampatti, Coimbatore – 641035. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 49,
+    "chunk_id": 49,
+    "image_path": null
+  },
+  {
+    "text": "Syllabus UNIT I - UI/UX 9 Fundamental concepts in UI & UX - Tools - Fundamentals of design principles - Psychology and Human Factors for User Interface Design - Layout and composition for Web, Mobile and Devices - Typography - Information architecture - Color theory - Design process flow, wireframes, best practices in the industry -User engagement ethics – Design alternatives 313. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 50,
+    "chunk_id": 50,
+    "image_path": null
+  },
+  {
+    "text": "Introduction OME355/IDRPT/IV/VIISEM/KG-KiTE • Designing a user interface is not just about creating an attractive screen. A successful interface should match how people think, learn, remember, and interact with technology. • Understanding human psychology helps designers create products that are intuitive, reduce user errors, and improve satisfaction.",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 51,
+    "chunk_id": 51,
+    "image_path": null
+  },
+  {
+    "text": "Psychology in UI/UX Design Psychology in UI/UX is the study of how users perceive, process, and respond to information while interacting with digital products. It helps answer questions such as: • What attracts users' attention? • Why do users click certain buttons? • How do users make decisions? • What causes confusion or frustration? OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 52,
+    "chunk_id": 52,
+    "image_path": null
+  },
+  {
+    "text": "Contd. OME355/IDRPT/IV/VIISEM/KG-KiTE Goals of Applying Psychology • Reduce cognitive effort. • Improve decision-making. • Increase user satisfaction. • Enhance learning and memorability. • Build trust.",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 53,
+    "chunk_id": 53,
+    "image_path": null
+  },
+  {
+    "text": "Human Factors in UI Design Human factors refer to designing products that accommodate users' physical and cognitive abilities. Important Human Factors • Vision (font size, color contrast) • Memory (simple navigation) • Attention (highlight important actions) • Motor skills (button size and spacing) • Accessibility (support for users with disabilities) OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 54,
+    "chunk_id": 54,
+    "image_path": null
+  },
+  {
+    "text": "Cognitive Load • Cognitive load is the amount of mental effort required to use an interface. OME355/IDRPT/IV/VIISEM/KG-KiTE High Cognitive Load Too many buttons Too many colors Complex menus Long forms Technical language Low Cognitive Load Simple layout Clear instructions Logical navigation Minimal options Familiar icons",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 55,
+    "chunk_id": 55,
+    "image_path": null
+  },
+  {
+    "text": "Gestalt Principles Gestalt principles explain how people naturally organize visual elements. a) Proximity Objects placed close together are perceived as related. b) Similarity Similar colors, shapes, or sizes appear to belong together. c) Continuity The eye follows smooth paths or lines. d) Closure People mentally complete incomplete shapes. e) Figure-Ground Users distinguish foreground objects from the background. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 56,
+    "chunk_id": 56,
+    "image_path": null
+  },
+  {
+    "text": "Fitts's Law The time to reach a target depends on its size and distance. Implication: Frequently used buttons should be large and easy to reach. Example: Mobile apps place the \"Home\" button near the bottom for easy thumb access OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 57,
+    "chunk_id": 57,
+    "image_path": null
+  },
+  {
+    "text": "Hick's Law Definition The more choices users have, the longer they take to make a decision. Example Instead of displaying 20 menu options, group them into categories. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 58,
+    "chunk_id": 58,
+    "image_path": null
+  },
+  {
+    "text": "Miller's Law People can hold about 7 ± 2 items in short-term memory. Application Keep menus concise. Break information into smaller sections. Use progressive disclosure for complex tasks. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 59,
+    "chunk_id": 59,
+    "image_path": null
+  },
+  {
+    "text": "Design Process Flow OME355/IDRPT/IV/VIISEM/KG-KiTE Identify Problem: Understand user needs. User Research: Interviews, surveys, observations. Define Requirements: Translate needs into features. Ideate: Brainstorm multiple solutions. Wireframing: Create screen layouts. Prototype: Build an interactive model. User Testing: Collect feedback. Iterate: Refine based on results. Final Design: Deliver to developers.",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 60,
+    "chunk_id": 60,
+    "image_path": null
+  },
+  {
+    "text": "OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 61,
+    "chunk_id": 61,
+    "image_path": null
+  },
+  {
+    "text": "Real-World Applications • Mobile Banking Apps • E-Commerce Platforms • Hospital Management Systems • Smart Home Devices • Educational Portals • Automotive Infotainment Systems • ATM Interfaces • Wearable Devices • Industrial Control Panels OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 62,
+    "chunk_id": 62,
+    "image_path": null
+  },
+  {
+    "text": "Subject Name & Code : OME355/INDUSTRIAL DESIGN & RAPID PROTOTYPING TECHNIQUES Branch & Department : AI&DS / CSE Year & Semester : IV / VII Academic Year :2026 - 27 KGiSL Institute of Technology (An Autonomous Institution) Affiliated to Anna University, Approved by AICTE, Recognized by UGC,Accredited by NAAC & NBA (B.E-CSE,B.E-ECE, B.Tech-IT), 365, KGiSL Campus, Thudiyalur Road, Saravanampatti, Coimbatore – 641035. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 63,
+    "chunk_id": 63,
+    "image_path": null
+  },
+  {
+    "text": "Syllabus UNIT I - UI/UX 9 Fundamental concepts in UI & UX - Tools - Fundamentals of design principles - Psychology and Human Factors for User Interface Design - Layout and composition for Web, Mobile and Devices - Typography - Information architecture - Color theory - Design process flow, wireframes, best practices in the industry -User engagement ethics – Design alternatives. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 64,
+    "chunk_id": 64,
+    "image_path": null
+  },
+  {
+    "text": "User engagement OME355/IDRPT/IV/VIISEM/KG-KiTE • User engagement refers to how effectively users interact with a product or application over time. Examples: • Instagram • WhatsApp • YouTube • Amazon • Swiggy Goal: Create engaging experiences without manipulating users.",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 65,
+    "chunk_id": 65,
+    "image_path": null
+  },
+  {
+    "text": "What is UX Ethics? UX Ethics--Ethical design means creating digital products that: • Respect users • Protect privacy • Promote accessibility • Provide transparency • Avoid manipulation Simple definition: Ethical UX ensures technology benefits users while respecting their rights. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 66,
+    "chunk_id": 66,
+    "image_path": null
+  },
+  {
+    "text": "Why Ethics Matters? OME355/IDRPT/IV/VIISEM/KG-KiTE Benefits ✔Builds trust ✔Increases customer loyalty ✔Protects user privacy ✔Enhances brand reputation ✔Complies with legal regulations Example: • Apple promotes privacy as a key feature. • Google provides permission controls for user data.",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 67,
+    "chunk_id": 67,
+    "image_path": null
+  },
+  {
+    "text": "Principles of Ethical Design OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 68,
+    "chunk_id": 68,
+    "image_path": null
+  },
+  {
+    "text": "Dark Patterns Interfaces intentionally designed to trick users. Examples ❌Hidden unsubscribe button ❌Automatically adding products to the cart ❌Forced account creation ❌Fake urgency (\"Only 1 left!\") ❌Confusing cookie consent OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 69,
+    "chunk_id": 69,
+    "image_path": null
+  },
+  {
+    "text": "Types of Dark Patterns OME355/IDRPT/IV/VIISEM/KG-KiTE Pattern Example Confirm Shaming \"No thanks, I don't like saving money.\" Roach Motel Easy to join, difficult to leave Sneak into Basket Automatic product addition Hidden Costs Extra fees at checkout Fake Countdown False urgency",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 70,
+    "chunk_id": 70,
+    "image_path": null
+  },
+  {
+    "text": "Ethical vs Unethical Design OME355/IDRPT/IV/VIISEM/KG-KiTE Ethical Design Unethical Design Easy navigation Confusing navigation Clear pricing Hidden charges Honest notifications Spam notifications Simple cancellation Difficult cancellation Privacy protection Data misuse",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 71,
+    "chunk_id": 71,
+    "image_path": null
+  },
+  {
+    "text": "Design Alternatives Different design solutions created before selecting the final interface. Purpose: • Compare usability • Evaluate aesthetics • Improve functionality • Gather user feedback OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 72,
+    "chunk_id": 72,
+    "image_path": null
+  },
+  {
+    "text": "Types of Design Alternatives OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 73,
+    "chunk_id": 73,
+    "image_path": null
+  },
+  {
+    "text": "Example- Design a Food Delivery App OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 74,
+    "chunk_id": 74,
+    "image_path": null
+  },
+  {
+    "text": "How to Select the Best Design? ✔User needs ✔Business goals ✔Accessibility ✔Performance ✔Simplicity ✔Cost ✔Feedback OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 75,
+    "chunk_id": 75,
+    "image_path": null
+  },
+  {
+    "text": "Design Evaluation Methods OME355/IDRPT/IV/VIISEM/KG-KiTE User Testing A/B Testing Heuristic Evaluation Cognitive Walkthrough Surveys Interviews",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 76,
+    "chunk_id": 76,
+    "image_path": null
+  },
+  {
+    "text": "OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 77,
+    "chunk_id": 77,
+    "image_path": null
+  },
+  {
+    "text": "Ethical or Not? 1. Cookie popup 2. Fake sale timer 3. Easy unsubscribe 4. Hidden subscription 5. Permission request classify each as: 🔴Ethical 🔴Unethical OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 78,
+    "chunk_id": 78,
+    "image_path": null
+  },
+  {
+    "text": "Assignment Choose one mobile app (e.g., Amazon, Flipkart, Swiggy, WhatsApp, Instagram). Write a short report that: • Identifies three ethical design practices. • Identifies two potential dark patterns, if any. • Suggests one improved design alternative with justification. OME355/IDRPT/IV/VIISEM/KG-KiTE",
+    "upload_id": "5db2086f",
+    "source_file": "U1_L1_merged.pdf",
+    "content_type": "pdf",
+    "page": 79,
+    "chunk_id": 79,
+    "image_path": null
+  },
+  {
+    "text": "IOT-ENABLED SMART AIR-COOLING SYSTEM WITH AUTOMATED TEMPERATURE CONTROL AND REAL-TIME PERFORMANCE MONITORING A MINI PROJECT REPORT Submitted by NAME OF THE CANDIDATE Abinaya S – 711723243002 Ragavarshini A – 7117232433075 Sindhujashree R – 711723243096 Sivasakthi R - 711723243099 in partial fulfillment for the award of the degree of BACHELOR OF ENGINEERING in Artificial Intelligence and Data Science KGiSL INSTITUTE OF TECHNOLOGY ANNA UNIVERSITY: CHENNAI 600 025 AUGUST 2026",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 1,
+    "chunk_id": 1,
+    "image_path": null
+  },
+  {
+    "text": "A PROJECT REPORT Submitted by Abinaya S – 711723243002 Ragavarshini A – 7117232433075 Sindhujashree R – 711723243096 Sivasakthi R – 711723243099 in partial fulfillment for the award of the degree of BACHELOR OF ENGINEERING in Artificial Intelligence and Data Science KGiSL INSTITUTE OF TECHNOLOGY ANNA UNIVERSITY: CHENNAI 600 025 AUGUST 2026",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 2,
+    "chunk_id": 2,
+    "image_path": null
+  },
+  {
+    "text": "KGiSL INSTITUTE OF TECHNOLOGY BONAFIDE CERTIFICATE Certified that this project report \"IOT-ENABLED SMART AIR-COOLING SYSTEM WITH AUTOMATED TEMPERATURE CONTROL AND REAL-TIME PERFORMANCE MONITORING\" is the bonafide work of \"Abinaya S, Ragavarshini A, Sindhujashree R, Sivasakthi R\" who carried out the project work under my supervision. SIGNATURE SIGNATURE HEAD OF THE DEPARTMENT SUPERVISOR Assistant Professor Department of Artificial Intelligence and Data Science. Department of Computer Science & Engg. KGiSL Institute of Technology, Coimbatore - 641 035. KGiSL Institute of Technology, Coimbatore - 641 035. INTERNAL EXAMINER EXTERNAL EXAMINER",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 3,
+    "chunk_id": 3,
+    "image_path": null
+  },
+  {
+    "text": "ABSTRACT The modern Internet of Things (IoT) landscape demands efficient, automated, and lightweight environmental control systems capable of real-time monitoring and responsive actuation. This project presents AeroCool IoT, a full-stack IoT- enabled smart air-cooling system designed to automate temperature control and provide live performance tracking. The system is engineered using a modular architecture comprising a Flask backend, an SQLite database, and an HTML5/CSS3/Vanilla JavaScript frontend rendered via Jinja2, with Chart.js integrated for historical metrics visualization. To achieve continuous operation prior to physical hardware deployment, a dedicated simulation engine simulates realistic, non-random environmental telemetry. The backend incorporates a dynamic control algorithm that automatically calculates fan speed percentages and toggles active cooling states based on pre-configured thermal thresholds (28°C threshold, 35°C critical level). Additionally, an ESP32-ready RESTful endpoint (/api/sensor) is integrated to ensure plug-and-play compatibility with microcontrollers in physical deployments. The result is a highly responsive, lightweight, and modern IoT application capable of automated thermal management and real-time user notification.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 4,
+    "chunk_id": 4,
+    "image_path": null
+  },
+  {
+    "text": "TABLE OF CONTENT 1. Introduction 1.1 General 1.2 Objectives 1.3 Scope 2. High-Level Architecture and Data Flow 2.1 System Architecture 2.2 Data Flow 2.3 Automatic Cooling Logic 3. Technology Stack and Implementation 3.1 Technology Stack 3.2 Backend and Frontend 3.3 Database and REST API 3.4 AI Service and Data Visualization 4. System Design and Core Modules 4.1 Simulation Engine 4.2 Automation and Alert Engine 4.3 Persistence Layer 4.4 REST API and Dashboard 4.5 Gemini AI Service 5. Software Implementation 5.1 System Implementation 5.2 Dashboard Implementation 5.3 AI Implementation 6. Testing and Results 6.1 Testing 6.2 Results 7. Conclusion and Future Scope 7.1 Conclusion 7.2 Future Scope",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 5,
+    "chunk_id": 5,
+    "image_path": null
+  },
+  {
+    "text": "LIST OF TABLES LIST OF FIGURES Table No. Title Table 3.1 Technology Stack Table 4.1 Fan Control Levels Table 6.1 Test Cases and Expected Results Figure No. Title Figure 2.1 High-Level System Architecture Figure 3.1 Database Schema Design Figure 4.1 Fan Control Levels Figure 4.2 Alert System Figure 4.3 Performance Analytics and Insights Figure 4.4 Dashboard Figure 4.5 AI Coding Assistant",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 6,
+    "chunk_id": 6,
+    "image_path": null
+  },
+  {
+    "text": "LIST OF SYMBOLS, ABBREVIATIONS AND NOMENCLATURE API Application Programming Interface CSS Cascading Style Sheets ESP32 Low-cost, low-power system-on-a-chip microcontroller with Wi-Fi & Bluetooth HTML HyperText Markup Language HTTP Hypertext Transfer Protocol IoT Internet of Things JSON JavaScript Object Notation REST Representational State Transfer SQL Structured Query Language UI User Interface",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 7,
+    "chunk_id": 7,
+    "image_path": null
+  },
+  {
+    "text": "CHAPTER 1 INTRODUCTION 1.1 Introduction The Internet of Things (IoT) enables physical systems to be monitored and controlled through connected software applications. Temperature and humidity monitoring is one of the common applications of IoT, where environmental conditions can be continuously observed and used to control cooling systems. The proposed IoT-Enabled Smart Air-Cooling System with Automated Temperature Control and Real-Time Performance Monitoring is a software-based mini project that demonstrates this concept using simulated sensor data. The system generates ambient temperature and relative humidity readings through selectable profiles such as Normal, Warm, Hot, and Cooling Down. The application automatically evaluates the simulated temperature and controls the fan state according to predefined levels such as OFF, LOW, MEDIUM, and HIGH. It also monitors abnormal temperature conditions and generates safety alerts when required. The system provides a web-based dashboard through REST APIs for displaying real-time operational information, KPI summaries and historical temperature data. A persistence layer stores telemetry, operational states, alerts and configuration settings using SQLite. In addition, a Gemini AI service is included to provide operational responses based on the available runtime system data. Since the current project focuses only on the software implementation, physical sensors, ESP32 and cooling hardware are not used.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 8,
+    "chunk_id": 8,
+    "image_path": null
+  },
+  {
+    "text": "persistence layer stores telemetry, operational states, alerts and configuration settings using SQLite. In addition, a Gemini AI service is included to provide operational responses based on the available runtime system data. Since the current project focuses only on the software implementation, physical sensors, ESP32 and cooling hardware are not used. Instead, simulated data is used to demonstrate the complete monitoring, automation, alert and visualization workflow. 1.2 Objectives The main objectives of the project are: • To simulate temperature and humidity readings using different environmental profiles. • To automate fan control based on predefined temperature conditions. • To monitor high-temperature conditions and generate safety alerts.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 8,
+    "chunk_id": 9,
+    "image_path": null
+  },
+  {
+    "text": "• To store telemetry and system information for historical analysis. • To provide a real-time web dashboard for system monitoring. • To provide AI-assisted operational responses using runtime system information.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 9,
+    "chunk_id": 10,
+    "image_path": null
+  },
+  {
+    "text": "CHAPTER 2 High-Level System Architecture The AeroCool IoT system is designed as a software-based smart air-cooling application using simulated sensor data. The system consists of the following major components: 1. Simulation Engine The Simulation Engine generates continuous ambient temperature (°C) and relative humidity (%) readings. Different operating profiles such as Normal, Warm, Hot, and Cooling Down can be selected to simulate different environmental conditions. 2. Automation Engine The Automation Engine evaluates the current temperature against predefined operating thresholds and determines the appropriate fan state. The system supports different fan levels such as OFF (0%), LOW (30%), MEDIUM (60%), and HIGH (100%). This allows the cooling response to change automatically according to the simulated temperature. 3. Alert Engine The Alert Engine monitors temperature conditions and generates safety alerts when predefined limits are exceeded. It produces HIGH_TEMPERATURE safety events and avoids repeatedly generating the same alert by using deduplication. 4. Persistence Layer The Persistence Layer stores the important system information, including telemetry readings, operational states, alerts and configuration settings. SQLite is used for the current software prototype to provide lightweight local data storage. 5. REST API and Dashboard The REST API provides communication between the backend and the web dashboard. It supplies",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 10,
+    "chunk_id": 11,
+    "image_path": null
+  },
+  {
+    "text": "The Persistence Layer stores the important system information, including telemetry readings, operational states, alerts and configuration settings. SQLite is used for the current software prototype to provide lightweight local data storage. 5. REST API and Dashboard The REST API provides communication between the backend and the web dashboard. It supplies real-time operational information, KPI summaries and historical data for visualization. The dashboard presents the system status,",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 10,
+    "chunk_id": 12,
+    "image_path": null
+  },
+  {
+    "text": "temperature and humidity values, fan state, alerts and historical area charts through the web interface. 6. Gemini AI Service The Gemini AI Service uses relevant runtime information from the database to create context for AI-based responses. The service is intended to provide grounded operational responses based on the available system data, rather than generating responses unrelated to the application's actual operating conditions. Fig 2.1: High – level architecture and data flow",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 11,
+    "chunk_id": 13,
+    "image_path": null
+  },
+  {
+    "text": "CHAPTER 3 TECHNOLOGY STACK AND IMPLEMENTATION 3.1 Technology Stack The AeroCool IoT system uses a lightweight software stack suitable for a mini project. The major technologies used are: Component Technology Programming Language Python Backend Framework Flask Frontend HTML, CSS, JavaScript Database SQLite API REST API Data Visualization Chart.js AI Service Gemini AI Development Environment Visual Studio Code Table 3.1 : Technology Stack 3.2 Backend Implementation The backend is developed using Python and Flask. Flask manages the application routes, REST API endpoints and communication between the dashboard and database. The backend receives simulated telemetry data from the Simulation Engine and passes it to the Automation and Alert Engines for processing. The processed information is then stored in SQLite and made available to the dashboard through REST APIs.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 12,
+    "chunk_id": 14,
+    "image_path": null
+  },
+  {
+    "text": "3.3 Frontend Implementation The user interface is developed using HTML, CSS and JavaScript. The dashboard provides a simple interface for monitoring the current temperature, humidity, fan state, alerts and system performance. JavaScript communicates with the Flask REST API to retrieve updated information and display it without requiring a complete page refresh. 3.4 Database Implementation SQLite is used as the persistence layer for the current software prototype. It stores: • Telemetry readings • Fan and cooling states • Alerts • System configuration • Other required operational information SQLite is suitable for the mini project because it is lightweight and does not require a separate database server. Fig 3.1: Database Schema design",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 13,
+    "chunk_id": 15,
+    "image_path": null
+  },
+  {
+    "text": "3.5 REST API Implementation REST APIs provide communication between the Flask backend and the dashboard. The APIs are responsible for providing: • Current system status • Latest telemetry • KPI summaries • Historical readings • Fan and cooling state • Alert information • Configuration data This separation allows the backend and frontend to operate independently while communicating through defined API endpoints. 3.6 AI Service Implementation The Gemini AI Service is integrated to provide operational assistance. The service uses relevant runtime information from the database as context before generating a response. This approach ensures that AI responses are based on the available system information, such as temperature, humidity, fan state and alerts, rather than unrelated information. 3.7 Data Visualization Chart.js is used to display historical temperature and other relevant telemetry information through area or line charts. These visualizations help users understand changes in environmental conditions and observe the behaviour of the automated cooling system over time.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 14,
+    "chunk_id": 16,
+    "image_path": null
+  },
+  {
+    "text": "CHAPTER 4 SYSTEM DESIGN AND CORE MODULES 4.1 Simulation Engine The Simulation Engine generates continuous ambient temperature and relative humidity readings for the software prototype. It provides selectable profiles such as Normal, Warm, Hot, and Cooling Down to represent different environmental conditions. These simulated readings act as the input for the automation and monitoring components. 4.2 Automation Engine The Automation Engine evaluates the current temperature against the configured thresholds and determines the appropriate fan state. The system supports four fan levels:The fan state is automatically adjusted according to the simulated temperature condition. Fig: 4.1 Fan Control Console Fan State Speed OFF 0% LOW 30% MEDIUM 60% HIGH 100% Table : 4.1 Fan Control Levels",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 15,
+    "chunk_id": 17,
+    "image_path": null
+  },
+  {
+    "text": "4.3 Alert Engine The Alert Engine continuously monitors the temperature and identifies safety conditions. When the configured high-temperature threshold is exceeded, a HIGH_TEMPERATURE alert is generated. Alert deduplication is used to prevent the same safety event from being repeatedly generated. Fig: 4.2 Alert Systems 4.4 Persistence Layer The Persistence Layer manages the storage of system information using SQLite. It maintains telemetry readings, operational states, alerts and configuration settings. The stored information is also used for historical visualization and providing runtime context to the AI service. Fig: 4.3 Performance Analytics and Insights",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 16,
+    "chunk_id": 18,
+    "image_path": null
+  },
+  {
+    "text": "4.5 REST API and Dashboard The REST API acts as the communication layer between the backend and the dashboard. It provides current operational state, KPI summaries and historical telemetry data. The dashboard displays the information in a simple interface, including temperature, humidity, fan state, cooling status, alerts and historical charts. The dashboard is updated using JavaScript without requiring a complete page refresh. Fig: 4.4 Dashboard 4.6 Gemini AI Service The Gemini AI Service provides AI-assisted operational responses. Before generating a response, relevant runtime information is collected from the database and provided as context. This allows the service to generate responses based on the current system conditions and available operational data. Fig : 4.5 AI coding assistant",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 17,
+    "chunk_id": 19,
+    "image_path": null
+  },
+  {
+    "text": "CHAPTER 5 SOFTWARE IMPLEMENTATION 5.1 Backend Implementation Flask handles the application logic, REST APIs, telemetry processing, automation and database communication. 5.2 Simulation Implementation The Simulation Engine generates temperature and humidity values using the selected environmental profile. These values are continuously processed by the system. 5.3 Automation and Alerts The Automation Engine determines the fan state based on temperature thresholds. The Alert Engine generates high-temperature safety alerts when required. 5.4 Dashboard Implementation The web dashboard displays real-time temperature, humidity, fan state, cooling status, alerts, KPIs and historical charts. JavaScript retrieves updated information through REST APIs. 5.5 AI Implementation The Gemini AI Service receives relevant runtime system data as context and provides grounded responses related to the current operating condition.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 18,
+    "chunk_id": 20,
+    "image_path": null
+  },
+  {
+    "text": "CHAPTER 6 TESTING AND RESULTS 6.1 Testing The system was tested using different simulated temperature profiles to verify automation, alerts and dashboard updates. Test Condition Expected Result Normal temperature Fan remains OFF Warm temperature Fan operates at LOW/MEDIUM level High temperature Fan operates at HIGH level Critical temperature HIGH_TEMPERATURE alert is generated Cooling Down Fan speed gradually reduces Table 6.1: Test cases and Expected Results 6.2 Results The system successfully processed simulated telemetry, automatically changed the fan state according to temperature conditions, generated safety alerts and displayed the results on the dashboard. The dashboard also provided historical charts and KPI information, while the AI service generated responses using the available runtime system data. The results demonstrate the feasibility of the proposed software-based smart cooling system.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 19,
+    "chunk_id": 21,
+    "image_path": null
+  },
+  {
+    "text": "CHAPTER 7 CONCLUSION AND FUTURE SCOPE 7.1 Conclusion The AeroCool IoT system successfully demonstrates a software-based smart air-cooling solution using simulated temperature and humidity data. The system integrates automated fan control, temperature alerts, data storage, REST APIs and a real-time dashboard. The project provides a simple platform for monitoring system conditions and responding automatically to temperature changes. The Gemini AI service further supports operational monitoring by providing responses based on runtime system data. 7.2 Future Scope The system can be further enhanced by: • Integrating real temperature and humidity sensors. • Connecting an ESP32 or similar IoT device. • Controlling a physical cooling fan. • Adding MQTT-based communication. • Adding energy-consumption monitoring. • Improving the automation algorithm. • Deploying the application on a cloud platform.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 20,
+    "chunk_id": 22,
+    "image_path": null
+  },
+  {
+    "text": "REFERENCES 1. Flask Documentation – Python Web Application Framework. 2. Python Documentation – Python Programming Language. 3. SQLite Documentation – SQLite Database Engine. 4. Chart.js Documentation – JavaScript Data Visualization Library. 5. MDN Web Docs – Fetch API and JavaScript Web APIs. 6. Google Gemini API Documentation – Generative AI Service. APPENDIX – SYSTEM API SUMMARY Method Endpoint Purpose GET /api/status Retrieves the current operational state GET /api/telemetry Retrieves current telemetry data GET /api/history Retrieves historical readings GET /api/alerts Retrieves system alerts GET /api/settings Retrieves system configuration POST /api/settings Updates system configuration POST /api/control Updates the fan/control state The REST API provides the communication layer between the Flask backend and the dashboard. It allows the frontend to retrieve system information and update configuration or control settings.",
+    "upload_id": "4195df9a",
+    "source_file": "IDRPT (PROJECT).pdf",
+    "content_type": "pdf",
+    "page": 21,
+    "chunk_id": 23,
+    "image_path": null
+  }
+]
